@@ -120,7 +120,7 @@ function addDep(){
             connection.query(
                 `INSERT INTO department SET ?`,
                 {
-                    name: deptName
+                    name: answer.deptName
                 },
                 function(err, res) {
                 if(err) return err;
