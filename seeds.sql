@@ -1,4 +1,4 @@
---departments
+-- department seeds
 INSERT INTO department (dep_id, name)
 VALUES (1, "Sales");
 
@@ -11,8 +11,7 @@ VALUES (3, "Engineering");
 INSERT INTO department (dep_id, name)
 VALUES (4, "Finance");
 
-
---roles
+-- role seeds
 INSERT INTO role (r_id, title, salary, department_id)
 VALUES (1, "Sales Lead", 100000, 1);
 
@@ -34,9 +33,9 @@ VALUES (6, "Software Egineer", 120000, 3);
 INSERT INTO role (r_id, title, salary, department_id)
 VALUES (7, "Accountant", 125000, 4);
 
---employees
+-- employee seeds
 INSERT INTO employee (emp_id, first_name, last_name, role_id, manager_id)
-VALUES (1, "Christian", "Doe", 1, 3);
+VALUES (1, "John", "Doe", 1, 3);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id, manager_id)
 VALUES (2, "Mike", "Chan", 2, 1);
@@ -45,16 +44,16 @@ INSERT INTO employee (emp_id, first_name, last_name, role_id)
 VALUES (3, "Ashley", "Rodriguez", 5);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id, manager_id)
-VALUES (4, "Jerry", "Lopez", 6, 3);
+VALUES (4, "Robert", "Lopez", 6, 3);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id, manager_id)
-VALUES (5, "Eddie", "Robertson", 6, 3);
+VALUES (5, "Rick", "Sanchez", 6, 3);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id)
-VALUES (6, "Maya", "Brown", 7);
+VALUES (6, "Malia", "Brown", 7);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id)
-VALUES (7, "Rick", "Sanchez", 3);
+VALUES (7, "Sarah", "Lourd", 3);
 
 INSERT INTO employee (emp_id, first_name, last_name, role_id, manager_id)
 VALUES (8, "Tom", "Allen", 4, 7);
